@@ -5,6 +5,9 @@ The source code and dataset for EMSE-DeepCom
 The project information are listed in the file projects.txt. 
 Each line represents a project which includes the GitHub username and project name connected by "_" 
 
+# The distribution of the Java methods and classes in projects
+
+
 # Data process
 ## Generate ASTs for Java methods
 Command: `python3 get_ast.py source.code ast.json`
