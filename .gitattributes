@@ -12,3 +12,13 @@ dataset/data/test/test.token.code filter=lfs diff=lfs merge=lfs -text
 dataset/data/test/test.token.nl filter=lfs diff=lfs merge=lfs -text
 dataset/data/test/test.token.sbt filter=lfs diff=lfs merge=lfs -text
 dataset/data/test/test_ast.json filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_1 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_2 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_3 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_6 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_7 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_8 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_10 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_4 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_5 filter=lfs diff=lfs merge=lfs -text
+dataset/10_folds/fold_9 filter=lfs diff=lfs merge=lfs -text
