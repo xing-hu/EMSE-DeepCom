@@ -1,6 +1,9 @@
 # EMSE-DeepCom
 The source code and dataset for EMSE-DeepCom
 
+# Model Training
+Command: `python3 __main__.py config.yaml --train -v`
+
 # Projects extracted from Github
 The project information are listed in the file projects.txt. 
 Each line represents a project which includes the GitHub username and project name connected by "_" 
