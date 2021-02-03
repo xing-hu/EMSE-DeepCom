@@ -82,7 +82,7 @@ def get_ast(file_name, w):
                         for j in range(i + 1, len(flatten)):
                             if child_path == flatten[j]['path']:
                                 children.append(j)
-                d["id"] = get_name(i)
+                d["id"] = i
                 d["type"] = get_name(node)
                 if children:
                     d["children"] = children
