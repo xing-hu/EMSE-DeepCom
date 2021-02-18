@@ -19,7 +19,7 @@ def nltk_bleu(hypotheses, references):
 
     avg_score = total_score / count
     print ('avg_score: %.4f' % avg_score)
-    return corpus_bleu, avg_score
+    return avg_score
 
 
 def evaluate(reference, predictions):
