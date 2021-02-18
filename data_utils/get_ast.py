@@ -5,6 +5,23 @@ import collections
 import sys
 
 
+def get_name(obj):
+    if(type(obj).__name__ in ['list', 'tuple']):
+        a = []
+        for i in obj:
+            a.append(get_name(i))
+        return a
+    elif(type(obj).__name__ in ['dict', 'OrderedDict']):
+        a = {}
+        for k in obj:
+            a[k] = get_name(obj[k])
+        return a
+    elif(type(obj).__name__ not in ['int', 'float', 'str', 'bool']):
+        return type(obj).__name__
+    else:
+        return obj
+
+
 def process_source(file_name, save_file):
     with open(file_name, 'r', encoding='utf-8') as source:
         lines = source.readlines()
@@ -66,7 +83,7 @@ def get_ast(file_name, w):
                             if child_path == flatten[j]['path']:
                                 children.append(j)
                 d["id"] = i
-                d["type"] = str(node)
+                d["type"] = get_name(node)
                 if children:
                     d["children"] = children
                 value = None
