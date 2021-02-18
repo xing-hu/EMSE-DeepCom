@@ -97,7 +97,7 @@ vocab_prefix: vocab      # name of the vocabulary files
 checkpoints: []          # list of checkpoints to load (in this specific order) after main checkpoint
 
 # decoding
-score_function: nltk_corpus_bleu # name of the main scoring function, inside 'evaluation.py' (used for selecting models)
+score_function: nltk_sentence_bleu # name of the main scoring function, inside 'evaluation.py' (used for selecting models)
 post_process_script: null # path to post-processing script (called before evaluating)
 remove_unk: False        # remove UNK symbols from the decoder output
 beam_size: 5             # beam size for decoding (decoder is greedy by default)
