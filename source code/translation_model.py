@@ -367,10 +367,10 @@ class TranslationModel:
                 hypotheses = data.splitlines()
             print("hypotheses:%d, references: %d" % (len(hypotheses), len(references)))
             # default scoring function is utils.bleu_score
-            score, avg_score = getattr(evaluation, score_function)(hypotheses, references)
+            avg_score = getattr(evaluation, score_function)(hypotheses, references)
 
             # print scoring information
-            score_info = [prefix, 'score={:.4f} avg_score={:.4f}'.format(score, avg_score)]
+            score_info = [prefix, 'avg_score={:.4f}'.format(avg_score)]
 
             # if score_summary:
             #    score_info.append(score_summary)
